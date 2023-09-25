@@ -35,7 +35,6 @@ body{
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
@@ -47,11 +46,9 @@ body{
 }
 .link-nav-contact{
     color: var(--NAVY-BLUE);
-    padding: 0px;
     text-decoration: none;
 
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
@@ -67,9 +64,24 @@ body{
 .link-nav:active{
     color: var(--ACTIVE);
 }
-.head-banner{
-    background: var(--NAVY-BLUE);
+
+.head-banner {
+background: var(--NAVY-BLUE);
 }
+.head-banner-text {
+    font-size: 50px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--WHITE);
+    margin-bottom: 40px;
+    text-align: center;
+}
+.head-banner-button {
+    border-radius: 4px;
+    background: var(--IRIS);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
 .head-banner-body{
     color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
@@ -82,13 +94,6 @@ body{
     line-height: 40px; /* 111.111% */
     letter-spacing: 0.72px;
     text-transform: capitalize;
-}
-.head-banner-text{
-    font-size: 50px;
-    line-height: 1;
-    text-transform: uppercase;
-    color: var(--WHITE);
-    text-align: center;
 }
 .head-banner-button{
     cursor: pointer;
@@ -174,3 +179,74 @@ body{
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
 }
+/* position of block / inline-block / flex / inline-flex*/
+
+/* start of header positioning */
+.navigation-container{
+    display: flex;
+    height: 72px;
+    width: auto;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container{
+    display: inline-flex;
+}
+.link-nav-parent{
+    display: inline-flex;
+    list-style: none;
+    gap: 50px;
+    margin-inline-start: 50px;
+}
+.link-nav-contact{
+    margin-inline-start: 200px;
+    display: inline-flex;
+    list-style: none;
+    gap: 50px;
+}
+/* end of header positioning */
+
+/* start of hero section */
+.head-banner {
+    width: auto;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head-banner-text {
+    display: inline-flex;
+}
+.head-banner-button {
+    display: inline-flex;
+    padding: 16px 32px;
+    margin-top: 200px;
+    position: absolute;
+}
+    /* end of hero section */
+
+/* start of text section */
+.head-banner-body-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-text{
+    display: inline-flex;
+    margin-inline-start: 120px;
+    margin-inline-end: 120px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+/* end of text section */
+
+/* start of picture section */
+.list-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+/* end of picture section */
