@@ -95,11 +95,14 @@ background: var(--NAVY-BLUE);
 }
 
 .head-banner-body{
+    color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
+
+    /* Header 2 */
     font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 40px; /* 111.111% */
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
@@ -158,8 +161,8 @@ background: var(--NAVY-BLUE);
 }
 .head-banner-body-text,
 .head-banner-body-picture{
-    height: 500px;
     background-color: var(--WHITE);
+    height: 500px;
 }
 .head-banner-body-team{
     border-color: var(--CLOUD);
@@ -184,7 +187,6 @@ background: var(--NAVY-BLUE);
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
 }
-
 /* position of block / inline-block / flex / inline-flex*/
 
 /* start of header positioning */
@@ -222,15 +224,10 @@ background: var(--NAVY-BLUE);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.head-banner-text {
-    display: inline-flex;
+    flex-direction: column;
 }
 .head-banner-button {
-    display: inline-flex;
     padding: 16px 32px;
-    margin-top: 200px;
-    position: absolute;
 }
 /* end of hero section */
 
@@ -239,14 +236,12 @@ background: var(--NAVY-BLUE);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-inline-start: 120px;
+    margin-inline-end: 120px;
 }
 .list-text{
     display: inline-flex;
-    margin-inline-start: 120px;
-    margin-inline-end: 120px;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
+    gap: 8px;
 }
 /* end of text section */
 
