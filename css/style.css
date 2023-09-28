@@ -237,5 +237,98 @@ body {
     display: inline-flex;
     flex-shrink: 0;
 }
-
 /* end of footer */
+
+/* start general styling for Portfolio page */
+.nav-btn button {
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--IRIS);
+    padding: 12px 24px;
+
+    border-radius: 4px;
+    border: 1px solid var(--CORNFLOWER);
+    background: var(--CLOUD);
+}
+
+.nav-btn button:hover {
+    color: var(--WHITE);
+    background-color: var(--IRIS);
+}
+
+.picture-parent {
+    list-style: none;
+}
+
+.picture-list h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--NAVY-BLUE);
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.picture-list {
+    border: 1px solid var(--CORNFLOWER);
+    background: var(--WHITE);
+}
+
+/* end of general styling for Portfolio page */
+
+/* start of nav button */
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    margin-top: 96px;
+    margin-left: 427px;
+    margin-right: 427px;
+    margin-bottom: 72px;
+}
+
+/* end of nav button */
+
+/* start of picture list */
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 72px;
+}
+
+.picture-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 156px;
+    padding-right: 156px;
+    gap: 24px;
+    margin: 0;
+    padding-bottom: 48px;
+}
+
+.list-disc {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 8px;
+    height: 56px;
+    width: 328px;
+}
+
+.list-disc h3,
+.list-disc p {
+    margin: 0;
+}
+
+img {
+    width: 360px;
+    height: 300px;
+}
+
+/* end of picture list */
