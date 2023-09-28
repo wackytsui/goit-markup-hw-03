@@ -175,6 +175,10 @@ body {
     display: inline-flex;
     gap: 20px;
 }
+.body-feature-list li {
+    border: 1px solid var(--CORNFLOWER);
+    background: url(<path-to-image>), lightgray -72.845px -19px / 144.444% 112.667% no-repeat;
+}
 /* end of section 2 */
 
 /* start of section 3 */
@@ -225,18 +229,13 @@ body {
 .footer-page {
     display: flex;
     height: 312px;
-    flex-direction: column;
-    justify-content: center;
-}
-.footer-page .logo{
-    display: inline-flex;
-    height: 24px;
     align-items: center;
+    padding-inline-start: 156px;
+    padding-inline-end: 156px;
+}
+.footer .logo{
+    display: inline-flex;
     flex-shrink: 0;
 }
-.footer-page .logo,
-.footer-page p {
-    margin-inline-start: 156px;
-    margin-inline-end: 156px;
-}
+
 /* end of footer */
