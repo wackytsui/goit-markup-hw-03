@@ -14,7 +14,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--SLATE);
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.32px;
     width: 1440px;
     margin: auto;
@@ -24,7 +24,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-weight: 800;
-    line-height: 21px;
+    line-height: 1.16;
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
@@ -49,7 +49,8 @@ body {
     color: var(--SLATE);
     text-decoration: none;
 }
-.link:hover {
+.link:hover,
+.link:focus {
     color: var(--IRIS);
 }
 .hero {
@@ -60,7 +61,7 @@ body {
     text-align: center;
     font-size: 56px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 1.07;
     letter-spacing: 1.12px;
 }
 .hero-btn {
@@ -70,6 +71,10 @@ body {
     background: var(--IRIS);
     font-weight: 500;
     letter-spacing: 0.64px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--button);
 }
 .body-text-list,
 .body-feature-list,
@@ -86,7 +91,7 @@ body {
 .body-head {
     font-size: 36px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
     text-align: center;
@@ -264,7 +269,7 @@ body {
     font-size: 20px;
     font-weight: 500;
     color: var(--NAVY-BLUE);
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.4px;
 }
 
@@ -307,7 +312,6 @@ body {
     margin: 0;
     padding-bottom: 48px;
 }
-
 .list-disc {
     display: inline-flex;
     align-items: flex-start;
